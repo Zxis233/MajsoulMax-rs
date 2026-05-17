@@ -1,5 +1,5 @@
 
-ÁØ
+É
 
 liqi.protolq"é
 NotifyRoomGameStart
@@ -258,7 +258,7 @@ auto_match (R	autoMatch"^
 	game_plan (2.lq.CustomizedContestGamePlanRgamePlan"T
 !NotifyCustomizedContestPlanCancel
 	unique_id (RuniqueId
-uuid (	Ruuid"é
+uuid (	Ruuid"º
 Error
 code (Rcode
 
@@ -267,7 +267,9 @@ u32_params (R	u32Params
 str_params (	R	strParams
 
 json_param (	R	jsonParam
-level (Rlevel"1
+level (Rlevel
+message (	Rmessage
+args (	Rargs"1
 Wrapper
 name (	Rname
 data (Rdata"W
@@ -956,7 +958,7 @@ gift_inbox (2 .lq.FeedActivityData.GiftBoxDataR	giftInboxS
 MineActivityData&
 	dig_point (2	.lq.PointRdigPoint 
 map (2.lq.MineRewardRmap
-id (Rid"ÿ	
+id (Rid" 
 AccountActivityUpdate1
 	mine_data (2.lq.MineActivityDataRmineData*
 rpg_data (2.lq.RPGActivityRrpgData1
@@ -983,7 +985,12 @@ shoot_data (2.lq.ActivityShootDataR	shootData4
 
 bingo_data (2.lq.ActivityBingoDataR	bingoDataE
 snowball_data (2 .lq.ActivitySnowballValueChangesRsnowballDataL
-choose_group_up_data (2.lq.ActivityChooseGroupDataRchooseGroupUpData"I
+choose_group_up_data (2.lq.ActivityChooseGroupDataRchooseGroupUpData5
+mmo_data (2.lq.ActivityMMODataChangesRmmoDataY
+activity_buff (24.lq.AccountActivityUpdate.ActivityBuffDataArrayDirtyRactivityBuff^
+ActivityBuffDataArrayDirty
+dirty (Rdirty*
+value (2.lq.ActivityBuffDataRvalue"I
 ActivityCombiningWorkbench
 craft_id (RcraftId
 pos (Rpos"í
@@ -1206,7 +1213,113 @@ activityId
 activity_id (R
 activityId
 chest_id (RchestId!
-selection_id (RselectionId"‡
+selection_id (RselectionId"¿
+ActivityMMODataChanges
+activity_id (R
+activityIdX
+	character (2:.lq.ActivityMMODataChanges.ActivityMMOCharacterDataChangesR	characterI
+team (25.lq.ActivityMMODataChanges.ActivityMMOTeamDataChangesRteamF
+bag (24.lq.ActivityMMODataChanges.ActivityMMOBagDataChangesRbagF
+map (24.lq.ActivityMMODataChanges.ActivityMMOMapDataChangesRmapR
+support (28.lq.ActivityMMODataChanges.ActivityMMOSupportDataChangesRsupportã
+ActivityMMOCharacterDataChanges2
+character_id (2.lq.UInt32DirtyRcharacterId4
+
+equipments (2.lq.UInt32ArrayDirtyR
+equipmentsh
+ActivityMMOTeamMemberArrayDirty
+dirty (Rdirty/
+value (2.lq.ActivityMMOTeamMemberRvaluer
+ActivityMMOTeamDataChangesT
+members (2:.lq.ActivityMMODataChanges.ActivityMMOTeamMemberArrayDirtyRmembersk
+ActivityMMOEquipmentsArrayDirty
+dirty (Rdirty2
+value (2.lq.ActivityMMOEquipmentDataRvalueÒ
+ActivityMMOBagDataChangesZ
+
+equipments (2:.lq.ActivityMMODataChanges.ActivityMMOEquipmentsArrayDirtyR
+equipments9
+total_gain_count (2.lq.UInt32DirtyRtotalGainCount=
+total_fusion_count (2.lq.UInt32DirtyRtotalFusionCount¿
+ActivityMMOMapDataChanges%
+level (2.lq.UInt32DirtyRlevel0
+random_seed (2.lq.UInt32DirtyR
+randomSeed!
+won (2.lq.UInt32DirtyRwon'
+failed (2.lq.UInt32DirtyRfailedÎ
+ActivityMMOSupportDataChanges;
+last_receive_time (2.lq.UInt32DirtyRlastReceiveTimeH
+most_supporter (2!.lq.ActivityMMOSupportRecordDirtyRmostSupporterC
+receive_support_count (2.lq.UInt32DirtyRreceiveSupportCount"~
+ActivityMMOTeamMember!
+character_id (RcharacterId
+
+equipments (R
+equipments
+id (Rid
+type (Rtype"@
+ActivityMMOEquipmentData
+id (Rid
+stack (Rstack"q
+MMOActivityTeamCandidateData!
+character_id (RcharacterId
+
+equipments (R
+equipments
+id (Rid"ó
+ActivityMMOSupportRecord
+id (Rid
+count (Rcount
+type (Rtype!
+character_id (RcharacterId
+
+equipments (R
+equipments"i
+ActivityMMOSupportRecordDirty
+dirty (Rdirty2
+value (2.lq.ActivityMMOSupportRecordRvalue"õ
+ActivityMMOData
+activity_id (R
+activityIdJ
+	character (2,.lq.ActivityMMOData.ActivityMMOCharacterDataR	character;
+team (2'.lq.ActivityMMOData.ActivityMMOTeamDataRteam8
+bag (2&.lq.ActivityMMOData.ActivityMMOBagDataRbag8
+map (2&.lq.ActivityMMOData.ActivityMMOMapDataRmapD
+support (2*.lq.ActivityMMOData.ActivityMMOSupportDataRsupport]
+ActivityMMOCharacterData!
+character_id (RcharacterId
+
+equipments (R
+equipmentsÌ
+ActivityMMOTeamData3
+members (2.lq.ActivityMMOTeamMemberRmembersA
+friend_listd (2 .lq.MMOActivityTeamCandidateDataR
+friendList,
+friend_list_expiree (RfriendListExpireG
+random_friendsf (2 .lq.MMOActivityTeamCandidateDataRrandomFriends*
+daily_update_timeg (RdailyUpdateTime;
+npc_listh (2 .lq.MMOActivityTeamCandidateDataRnpcListÿ
+ActivityMMOBagData<
+
+equipments (2.lq.ActivityMMOEquipmentDataR
+equipments(
+total_gain_count (RtotalGainCount,
+total_fusion_count (RtotalFusionCountc
+random_recordd (2>.lq.ActivityMMOData.ActivityMMOBagData.ActivityMMORandomRecordRrandomRecordG
+ActivityMMORandomRecord
+rarity (Rrarity
+count (Rcountu
+ActivityMMOMapData
+level (Rlevel
+random_seed (R
+randomSeed
+won (Rwon
+failed (RfailedÇ
+ActivityMMOSupportData*
+last_receive_time (RlastReceiveTimeC
+most_supporter (2.lq.ActivityMMOSupportRecordRmostSupporter2
+receive_support_count (RreceiveSupportCountC
+support_recordd (2.lq.ActivityMMOSupportRecordRsupportRecord"‡
 ActivityFriendGiftData
 activity_id (R
 activityId 
@@ -1519,7 +1632,7 @@ finishTime
 open	 (Ropen#
 public_notice
  (	RpublicNotice!
-contest_type (RcontestType"“
+contest_type (RcontestType"˛
 CustomizedContestDetail
 	unique_id (RuniqueId
 
@@ -1551,7 +1664,8 @@ auto_match (R	autoMatch
 show_team_rank (RshowTeamRank
 	tied_rank (RtiedRank(
 match_start_time (RmatchStartTime$
-match_end_time (RmatchEndTime"›
+match_end_time (RmatchEndTime*
+open_rank_percent (RopenRankPercent"›
 CustomizedContestGamePlan
 	unique_id (RuniqueId
 uuid (	Ruuid#
@@ -1559,14 +1673,15 @@ auto_match (R	autoMatch
 account_ids (R
 accountIds&
 game_start_time (RgameStartTime!
-expired_time (RexpiredTime"Ø
+expired_time (RexpiredTime"“
 CustomizedContestPlayerReport
 	rank_rule (RrankRule
 rank (Rrank
 point (Rpoint
 
 game_ranks (R	gameRanks(
-total_game_count (RtotalGameCount"≤
+total_game_count (RtotalGameCount!
+rank_percent (RrankPercent"≤
 
 RecordGame
 uuid (	Ruuid
@@ -2464,7 +2579,23 @@ start_time (R	startTimeç
 tile (	Rtile
 tick (Rtick
 point (Rpoint
-time_end (RtimeEnd"r
+time_end (RtimeEnd"Â
+BannerActivityData
+activity_id (R
+activityId
+tag_img_url (	R	tagImgUrl2
+banner_background_url (	RbannerBackgroundUrl*
+banner_button_url (	RbannerButtonUrl
+tag_name (	RtagName
+
+start_time (R	startTime
+end_time (RendTime
+url (	Rurl
+type	 (Rtype
+sort
+ (Rsort
+need_popout (R
+needPopout"r
 ResConnectionInfo
 error (2	.lq.ErrorRerror<
 client_endpoint (2.lq.NetworkEndpointRclientEndpoint"`
@@ -3289,7 +3420,23 @@ order_type (R	orderType2
 client_version_string (	RclientVersionString"R
 ResCreateYostarOrder
 error (2	.lq.ErrorRerror
-order_id (	RorderId"È
+order_id (	RorderId"…
+ReqCreateYostarV4SDKOrder
+goods_id (RgoodsId
+client_type (R
+clientType
+
+account_id (R	accountId
+
+order_type (R	orderType2
+client_version_string (	RclientVersionString"ï
+ResCreateYostarV4SDKOrder
+error (2	.lq.ErrorRerror
+order_id (	RorderId
+
+notify_url (	R	notifyUrl
+
+extra_data (	R	extraData"È
 ReqCreateENPaypalOrder
 goods_id (RgoodsId
 client_type (R
@@ -3826,7 +3973,7 @@ recordList"9
 error (2	.lq.ErrorRerror,
 
 activities (2.lq.ActivityR
-activities"µ
+activities"Â
 ResAccountActivityData
 error (2	.lq.ErrorRerror=
 exchange_records (2.lq.ExchangeRecordRexchangeRecords>
@@ -3871,7 +4018,8 @@ shoot_data" (2.lq.ActivityShootDataR	shootData4
 bingo_data# (2.lq.ActivityBingoDataR	bingoData=
 snowball_data$ (2.lq.ActivitySnowballDataRsnowballData=
 marathon_data% (2.lq.ActivityMarathonDataRmarathonDataL
-choose_group_up_data& (2.lq.ActivityChooseGroupDataRchooseGroupUpDataÑ
+choose_group_up_data& (2.lq.ActivityChooseGroupDataRchooseGroupUpData.
+mmo_data' (2.lq.ActivityMMODataRmmoDataÑ
 ActivitySignInData
 activity_id (R
 activityId"
@@ -4033,7 +4181,14 @@ activityId"†
 activity_id (R
 activityId
 group (Rgroup
-count (Rcount"g
+count (Rcount"Æ
+ReqSetActivityBuff<
+	buff_list (2.lq.ReqSetActivityBuff.BuffInfoRbuffList
+activity_id (R
+activityId9
+BuffInfo
+buff_id (RbuffId
+level (Rlevel"g
 ResUpgradeActivityLevel
 error (2	.lq.ErrorRerror+
 rewards (2.lq.ExecuteRewardRrewards"B
@@ -4404,7 +4559,13 @@ resultList4
 sp_reward_items (2.lq.ExecuteRewardRspRewardItems!
 remain_count (RremainCount"(
 ReqTaskRequest
-params (Rparams"Q
+params (Rparams"0
+ReqYostarDeleteAccount
+server (Rserver"X
+ResYostarDeleteAccount
+error (2	.lq.ErrorRerror
+
+notify_url (	R	notifyUrl"Q
 ReqSimulationActivityTrain
 activity_id (R
 activityId
@@ -4741,7 +4902,7 @@ auto_match (R	autoMatch
 ReqFetchContestPlayerRank
 	unique_id (RuniqueId
 limit (Rlimit
-offset (Roffset"†	
+offset (Roffset"˙	
 ResFetchContestPlayerRank
 error (2	.lq.ErrorRerror
 total (Rtotal<
@@ -4759,7 +4920,7 @@ playerDataΩ
 totalPointè
 ContestSeriesGameResult
 key (Rkeyb
-results (2H.lq.ResFetchContestPlayerRank.ContestPlayerAccountData.ContestGameResultRresults”
+results (2H.lq.ResFetchContestPlayerRank.ContestPlayerAccountData.ContestGameResultRresultsä
 
 SeasonRank
 
@@ -4767,17 +4928,20 @@ account_id (R	accountId
 nickname (	RnicknameJ
 data (26.lq.ResFetchContestPlayerRank.ContestPlayerAccountDataRdata
 	team_name (	RteamName!
-modify_score (RmodifyScore¨
+modify_score (RmodifyScore
+rank (Rrank!
+rank_percent (RrankPercentœ
 
 PlayerData
 rank (RrankJ
 data (26.lq.ResFetchContestPlayerRank.ContestPlayerAccountDataRdata
 	team_name (	RteamName!
-modify_score (RmodifyScore"d
+modify_score (RmodifyScore!
+rank_percent (RrankPercent"d
 ReqFetchContestTeamRank
 	unique_id (RuniqueId
 limit (Rlimit
-offset (Roffset"¯
+offset (Roffset"õ
 ResFetchContestTeamRank
 error (2	.lq.ErrorRerror
 total (Rtotal>
@@ -4787,12 +4951,13 @@ PlayerData
 total_point (R
 totalPoint(
 total_game_count (RtotalGameCount!
-member_count (RmemberCountí
+member_count (RmemberCountµ
 SeasonTeamRank
 team_id (RteamId
 name (	Rname?
 data (2+.lq.ResFetchContestTeamRank.ContestTeamDataRdata
-rank (Rrank"j
+rank (Rrank!
+rank_percent (RrankPercent"j
 ReqFetchContestTeamPlayerRank
 	unique_id (RuniqueId
 offset (Roffset
@@ -5302,7 +5467,13 @@ activityId
  ResSnowballActivityReceiveReward
 error (2	.lq.ErrorRerror:
 changes (2 .lq.ActivitySnowballValueChangesRchanges+
-rewards (2.lq.ExecuteRewardRrewards"?
+rewards (2.lq.ExecuteRewardRrewards"Z
+ReqFetchBannerActivityData(
+activity_id_list (RactivityIdList
+lang (	Rlang"z
+ResFetchBannerActivityData
+error (2	.lq.ErrorRerror;
+activity_list (2.lq.BannerActivityDataRactivityList"?
 ReqMarathonActivityStartRace
 activity_id (R
 activityId"y
@@ -5320,7 +5491,111 @@ activityId:
 ResMarathonActivityFinishRace
 error (2	.lq.ErrorRerror=
 highest_record (2.lq.MarathonGameRecordRhighestRecord+
-rewards (2.lq.ExecuteRewardRrewards"a
+rewards (2.lq.ExecuteRewardRrewards":
+ReqMMOActivityFetchData
+activity_id (R
+activityId"j
+ResMMOActivityFetchData
+error (2	.lq.ErrorRerror.
+mmo_data (2.lq.ActivityMMODataRmmoData"|
+ReqMMOActivityEquipFusion
+activity_id (R
+activityId
+
+equip_list (R	equipList
+target_type (R
+targetType"ä
+ResMMOActivityEquipFusion
+error (2	.lq.ErrorRerror
+result (Rresult4
+changes (2.lq.ActivityMMODataChangesRchanges"`
+ReqMMOActivitySetCharacter
+activity_id (R
+activityId!
+character_id (RcharacterId"s
+ResMMOActivitySetCharacter
+error (2	.lq.ErrorRerror4
+changes (2.lq.ActivityMMODataChangesRchanges"Ô
+ReqMMOActivitySetTeamMember
+activity_id (R
+activityIdO
+members (25.lq.ReqMMOActivitySetTeamMember.MMOActivityTeamMemberRmembers^
+MMOActivityTeamMember!
+character_id (RcharacterId
+id (Rid
+type (Rtype"t
+ResMMOActivitySetTeamMember
+error (2	.lq.ErrorRerror4
+changes (2.lq.ActivityMMODataChangesRchanges"<
+ReqMMOActivityStartBattle
+activity_id (R
+activityId"°
+ResMMOActivityStartBattle
+error (2	.lq.ErrorRerrorO
+actions (25.lq.ResMMOActivityStartBattle.MMOActivityBattleActionRactionsI
+units (23.lq.ResMMOActivityStartBattle.MMOActivityBattleUnitRunits4
+changes (2.lq.ActivityMMODataChangesRchanges
+result (Rresultü
+MMOActivityBattleAction
+type (Rtype
+target (Rtarget
+from (Rfrom
+value (Rvalue
+tick (Rtick
+critical (RcriticalW
+MMOActivityBattleUnit
+id (Rid
+hp (Rhp
+
+equipments (R
+equipments"=
+ReqMMOActivityFinishBattle
+activity_id (R
+activityId"†
+ResMMOActivityFinishBattle
+error (2	.lq.ErrorRerror4
+changes (2.lq.ActivityMMODataChangesRchanges+
+rewards (2.lq.ExecuteRewardRrewards"Y
+ReqMMOActivitySetEquip
+activity_id (R
+activityId
+
+equipments (R
+equipments"o
+ResMMOActivitySetEquip
+error (2	.lq.ErrorRerror4
+changes (2.lq.ActivityMMODataChangesRchanges"B
+ReqMMOActivityUpdatehFriendList
+activity_id (R
+activityId"‚
+ResMMOActivityUpdatehFriendList
+error (2	.lq.ErrorRerrorA
+friend_list (2 .lq.MMOActivityTeamCandidateDataR
+friendListG
+random_friends (2 .lq.MMOActivityTeamCandidateDataRrandomFriends;
+npc_list (2 .lq.MMOActivityTeamCandidateDataRnpcList
+expire_time (R
+expireTime4
+changes (2.lq.ActivityMMODataChangesRchanges"E
+"ReqMMOActivityReceiveSupportReward
+activity_id (R
+activityId"˝
+"ResMMOActivityReceiveSupportReward
+error (2	.lq.ErrorRerror+
+rewards (2.lq.ExecuteRewardRrewards4
+changes (2.lq.ActivityMMODataChangesRchanges#
+support_count (RsupportCount.
+total_support_count (RtotalSupportCount"è
+#ReqMMOActivityDebugSetTeamCandidate
+activity_id (R
+activityIdA
+friend_list (2 .lq.MMOActivityTeamCandidateDataR
+friendListG
+random_friends (2 .lq.MMOActivityTeamCandidateDataRrandomFriends;
+npc_list (2 .lq.MMOActivityTeamCandidateDataRnpcList"|
+#ResMMOActivityDebugSetTeamCandidate
+error (2	.lq.ErrorRerror4
+changes (2.lq.ActivityMMODataChangesRchanges"a
 AmuletBadgeData
 id (Rid
 uid (Ruid
@@ -6584,7 +6859,39 @@ old_scores (R	oldScores!
 muyu (2.lq.MuyuInfoRmuyu1
 hules_history	 (2.lq.HuleInfoRhulesHistory"#
 PlayerLeaving
-seat (Rseat"c
+seat (Rseat"9
+SubmitGroup
+count (Rcount
+tiles (	Rtiles"V
+
+SubmitInfo
+submit_seat (R
+submitSeat'
+groups (2.lq.SubmitGroupRgroups"8
+ActionSubmit(
+submits (2.lq.SubmitInfoRsubmits"8
+RecordSubmit(
+submits (2.lq.SubmitInfoRsubmits"p
+TakeInfo
+	take_seat (RtakeSeat
+	from_seat (RfromSeat
+count (Rcount
+tiles (	Rtiles"Œ
+
+ActionTake"
+takes (2.lq.TakeInfoRtakes4
+	tingpais0 (2.lq.TingPaiDiscardInfoR	tingpais0-
+	tingpais1 (2.lq.TingPaiInfoR	tingpais17
+	operation (2.lq.OptionalOperationListR	operation"ü
+
+RecordTake"
+takes (2.lq.TakeInfoRtakes4
+	tingpais0 (2.lq.TingPaiDiscardInfoR	tingpais00
+tingpai (2.lq.RecordTake.TingPaiRtingpai7
+	operation (2.lq.OptionalOperationListR	operationL
+TingPai
+seat (Rseat-
+	tingpais1 (2.lq.TingPaiInfoR	tingpais1"c
 ReqRequestConnection
 type (Rtype
 route_id (	RrouteId
@@ -6611,7 +6918,7 @@ old_scores (R	oldScores!
 NULL 
 AUTH
 SYNCING	
-READY2◊‰
+READY2⁄Ì
 Lobby;
 fetchConnectionInfo.lq.ReqCommon.lq.ResConnectionInfo6
 fetchQueueInfo.lq.ReqCommon.lq.ResFetchQueueInfo+
@@ -6819,7 +7126,8 @@ buyFromZHP.lq.ReqBuyFromZHP.lq.ResCommon;
 createXsollaV4Order.lq.ReqCreateXsollaOrder.lq.ResCreateXsollaOrder<
 verifyMyCardOrder.lq.ReqVerifyMyCardOrder.lq.ResCommonP
 verificationIAPOrder.lq.ReqVerificationIAPOrder.lq.ResVerificationIAPOrderJ
-createYostarSDKOrder.lq.ReqCreateYostarOrder.lq.ResCreateYostarOrderJ
+createYostarSDKOrder.lq.ReqCreateYostarOrder.lq.ResCreateYostarOrderV
+createYostarV4SDKOrder.lq.ReqCreateYostarV4SDKOrder.lq.ResCreateYostarV4SDKOrderJ
 createBillingOrder.lq.ReqCreateBillingOrder.lq.ResCreateBillingOrderB
 solveGooglePlayOrder.lq.ReqSolveGooglePlayOrder.lq.ResCommonE
 solveGooglePayOrderV3.lq.ReqSolveGooglePlayOrderV3.lq.ResCommon:
@@ -6876,7 +7184,8 @@ buyFromZHP.lq.ReqBuyFromZHP.lq.ResCommon;
 createGameObserveAuth.lq.ReqCreateGameObserveAuth.lq.ResCreateGameObserveAuthV
 refreshGameObserveAuth.lq.ReqRefreshGameObserveAuth.lq.ResRefreshGameObserveAuth7
 fetchActivityBuff.lq.ReqCommon.lq.ResActivityBuffF
-upgradeActivityBuff.lq.ReqUpgradeActivityBuff.lq.ResActivityBuffP
+upgradeActivityBuff.lq.ReqUpgradeActivityBuff.lq.ResActivityBuff>
+setActivityBuff.lq.ReqSetActivityBuff.lq.ResActivityBuffP
 upgradeActivityLevel.lq.ReqUpgradeActivityLevel.lq.ResUpgradeActivityLevelh
 receiveUpgradeActivityReward#.lq.ReqReceiveUpgradeActivityReward#.lq.ResReceiveUpgradeActivityReward:
 upgradeChallenge.lq.ReqCommon.lq.ResUpgradeChallenge:
@@ -6931,7 +7240,8 @@ bindOauth2.lq.ReqBindOauth2.lq.ResCommon9
 fetchActivityInterval.lq.ReqCommon.lq.ResFetchActivityInterval<
 fetchRecentFriend.lq.ReqCommon.lq.ResFetchrecentFriend/
 	openGacha.lq.ReqOpenGacha.lq.ResOpenGacha0
-taskRequest.lq.ReqTaskRequest.lq.ResCommonY
+taskRequest.lq.ReqTaskRequest.lq.ResCommonM
+yostarDeleteAccount.lq.ReqYostarDeleteAccount.lq.ResYostarDeleteAccountY
 simulationActivityTrain.lq.ReqSimulationActivityTrain.lq.ResSimulationActivityTrain_
 fetchSimulationGameRecord .lq.ReqFetchSimulationGameRecord .lq.ResFetchSimulationGameRecorde
 startSimulationActivityGame".lq.ReqStartSimulationActivityGame".lq.ResStartSimulationActivityGameY
@@ -7026,9 +7336,19 @@ bindOauth2.lq.ReqBindOauth2.lq.ResCommon9
 snowballActivityStartBattle".lq.ReqSnowballActivityStartBattle".lq.ResSnowballActivityStartBattleh
 snowballActivityFinishBattle#.lq.ReqSnowballActivityFinishBattle#.lq.ResSnowballActivityFinishBattleY
 snowballActivityUpgrade.lq.ReqSnowballActivityUpgrade.lq.ResSnowballActivityUpgradek
-snowballActivityReceiveReward$.lq.ReqSnowballActivityReceiveReward$.lq.ResSnowballActivityReceiveReward_
+snowballActivityReceiveReward$.lq.ReqSnowballActivityReceiveReward$.lq.ResSnowballActivityReceiveRewardY
+fetchBannerActivityData.lq.ReqFetchBannerActivityData.lq.ResFetchBannerActivityData_
 marathonActivityStartRace .lq.ReqMarathonActivityStartRace .lq.ResMarathonActivityStartRaceb
-marathonActivityFinishRace!.lq.ReqMarathonActivityFinishRace!.lq.ResMarathonActivityFinishRace2ı
+marathonActivityFinishRace!.lq.ReqMarathonActivityFinishRace!.lq.ResMarathonActivityFinishRaceP
+mmoActivityFetchData.lq.ReqMMOActivityFetchData.lq.ResMMOActivityFetchDataV
+mmoActivityEquipFusion.lq.ReqMMOActivityEquipFusion.lq.ResMMOActivityEquipFusionY
+mmoActivitySetCharacter.lq.ReqMMOActivitySetCharacter.lq.ResMMOActivitySetCharacter\
+mmoActivitySetTeamMember.lq.ReqMMOActivitySetTeamMember.lq.ResMMOActivitySetTeamMemberV
+mmoActivityStartBattle.lq.ReqMMOActivityStartBattle.lq.ResMMOActivityStartBattleY
+mmoActivityFinishBattle.lq.ReqMMOActivityFinishBattle.lq.ResMMOActivityFinishBattleM
+mmoActivitySetEquip.lq.ReqMMOActivitySetEquip.lq.ResMMOActivitySetEquipg
+mmoActivityUpdateFriendList#.lq.ReqMMOActivityUpdatehFriendList#.lq.ResMMOActivityUpdatehFriendListq
+mmoActivityReceiveSupportReward&.lq.ReqMMOActivityReceiveSupportReward&.lq.ResMMOActivityReceiveSupportReward2ı
 FastTest,
 authGame.lq.ReqAuthGame.lq.ResAuthGame,
 	enterGame.lq.ReqCommon.lq.ResEnterGame,
